@@ -1,0 +1,11 @@
+[user]
+	name = Geoff Ryan
+	email = geoffrey.s.ryan@gmail.com
+[core]
+	editor = vim
+[merge]
+    tool = vimdiff
+[alias]
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[push]
+	default = current
