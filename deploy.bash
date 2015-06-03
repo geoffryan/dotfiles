@@ -4,6 +4,7 @@
 
 DOTPATH=`pwd`
 BACKUP=~/.dotfile.backup
+ORIGINAL=~/.dotfile.original
 
 if [ ! -d "$BACKUP" ]; then
     mkdir $BACKUP
@@ -30,5 +31,12 @@ if [ -f ~/.gitconfig ]; then
     mv ~/.gitconfig $BACKUP/gitconfig
 fi
 ln -sf $DOTPATH/gitconfig ~/.gitconfig
+
+# Backup original dotfiles, this should only happen the first time
+# deploy.bash is ever called.
+
+if [ ! -d "$ORIGINAL" ]; then
+    cp -r $BACKUP $ORIGINAL
+fi
 
 echo "Configured!"
