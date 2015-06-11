@@ -1,5 +1,10 @@
 # bashrc
 
+# Machine local preamble.
+if [ -f ~/.bashrc.preamble ]; then
+    source ~/.bashrc.preamble
+fi
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc

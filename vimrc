@@ -14,8 +14,8 @@ set linebreak
 set wrap
 set ww=<,>,[,[,h,l
 
-set listchars=tab:▸\ ,eol:¬
-set list
+"set listchars=tab:▸\ ,eol:�
+"set list
 
 set history=100
 set ruler
