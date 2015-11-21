@@ -12,7 +12,7 @@ fi
 
 #Aliases
 alias vi="vim"
-alias ls="ls -FG"
+alias ls="ls -F -G"
 
 # Machine local definitions.
 if [ -f ~/.bashrc.local ]; then
