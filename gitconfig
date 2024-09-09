@@ -1,5 +1,5 @@
 [user]
-	name = Geoff Ryan
+	name = Geoffrey Ryan
 	email = geoffrey.s.ryan@gmail.com
 [core]
 	editor = vim
@@ -9,3 +9,10 @@
     hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [push]
 	default = current
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[pull]
+    rebase = false
